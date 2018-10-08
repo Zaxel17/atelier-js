@@ -1,0 +1,56 @@
+header,table{
+    border: 30px;
+    border-color: blue; 
+    border-width: 15px;
+    border-style: outset;
+    border-radius: 50px;
+    background-color: aqua;
+}
+
+table{
+    margin: 10px 0px 0px 0px;
+    /* 
+    Aka margin-top:10px;
+    */
+    margin-left: auto;
+}
+
+body{
+    background-image: url('img/khmotif.jpg');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    visiblity:hidden;
+    /* diplay:none;*/
+    background-image: url('img/neige.jpg');
+}
+
+tr:hover{
+    background-color: green;
+}
+
+table{
+   padding: 15px;   
+}
+
+#cellule-cible{
+    background-color: red;
+}
+
+.ligne-impaire{
+    background-color: peachpuff;
+}
+
+tr:nth-of-type(3n+1){
+    /* even paire odd impaire*/
+    background-color: red;
+}
+
+tbody > tr:hover{
+    background-color: black !important;
+}

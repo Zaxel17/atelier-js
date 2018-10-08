@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calcule IMC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/styleDom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1 id="titre">DOM : IMC</h1>
+        <form>
+            <label>Poid (en kg) :</label>
+            <input id="poid">
+            <br>
+            <label>Taille (en m) :</label>
+            <input id="taille">
+            <br>
+            <input type="button" value="Calcule imc" onclick="fonction()"/>
+        </form>
+        
+        </div>
+        <script>
+            function fonction(){
+                var p = document.getElementById("poid").value;
+                var t = document.getElementById("taille").value;
+                if(p.length>0 && t.length>0){
+                    var imc = p/(t*t);
+                    //var res = ;
+                    //var form = document.getElementsByTagName("form");
+                    //form[0].innerHTML = res;
+                    //document.getElementsByTagName("form")[0].innerHTML = `<h1>Votre  ${imc}</h1>`;
+                    document.getElementsByTagName("form")[0].insertAdjacentHTML("beforeend", `<h1>Votre  ${imc}</h1>`);
+                }
+                else{
+                    alert("Entrez les valeurs");
+                }
+            }
+        </script>
+    </body>
+</html>

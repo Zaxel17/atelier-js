@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 oct. 2018, 12:30:57
+    Author     : Administrateur
+*/
+
+#tete{
+    background-image: url('img/khmotif.jpg');
+    background-size: 50px;
+    font-size: 100px;
+    font-family: fantasy;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 15px;
+}
+
+main{
+    text-align: center;
+}
+
+#tableau{
+    margin : 15px auto;
+    font-size: 20px;
+}
+
+td{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+}
+
+tr:nth-of-type(odd) td:nth-of-type(odd), tr:nth-of-type(even) td:nth-of-type(even){
+    background-color: fuchsia;
+}
+
+td:hover{
+    background-color: black !important;
+    color:white;
+}
+
+#bouton_demarrer{
+    color: aqua;
+    border-radius: 25%;
+    font-family: cursive;
+    font-size: 40px;
+    background-color: black;
+    border-color: gold;
+    margin-top: 2em;
+    padding: 15px;
+}
+
+#pied{
+    margin-top: 15px;
+    background-color: darkgrey;
+    color: ivory;
+    text-align: center;
+}

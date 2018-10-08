@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EX js</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+            
+//            var tab = [];
+//            tab = [1, 'coucou', true];
+//            var i = tab.length();
+//            alert(i);
+//            tab.push(10);
+//            tab.pop(); // supprime le dernier element
+//            var tab2 = new Array(10);
+//            tab2.fill('*');
+            
+//            var m = 75; //prompt("entrer votre poid :");
+//            var h = 1.85; //prompt("entrez votre taille :");
+//            var imc = m/(h*h);
+//            alert(imc);
+//            
+//            var a = 2;
+//            var res = Math.pow(a,3);
+//            alert(res);
+//            
+//            var r = 10;
+//            var air = Math.PI*(r*r);
+//            alert(air);
+//            
+//            var c1 = 10;
+//            var c2 = 2;
+//            var h = (c1*c1)+(c2*c2);
+//            h=Math.pow(h,0.5);
+//            alert(h);
+
+            function facto(a){
+                var res =1;
+                for(var i=a; i>1; i--){
+                    res = res * i; 
+                }
+               return res;
+            }
+            
+            alert(facto(10));
+            
+            function factor(a){
+                if(a<=1){
+                    return 1;  
+                }
+                return a*facto(a-1);
+            }
+            
+            alert(factor(10));
+            
+            var s = prompt("chosissez votre sort ");
+            switch (s){
+                case "1" :
+                    alert("Vole 2 cartes");
+                    break;
+                case "2" :
+                    alert("Donne 2 cartes");
+                    break;
+                case "3" :
+                    alert("Passe ton tour");
+                    break;
+                case "4" :
+                    alert("Jouer 2 fois");
+                    break;
+                default : 
+                    alert("Utilise un VRAI sort");
+            }
+        </script>
+    </body>
+</html>

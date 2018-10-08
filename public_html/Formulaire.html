@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form action="inscription.php">
+            <label for="login">Login :</label>
+            <input id="login" name="login" type="text"/>  
+            <br />
+            <label for="mdp">MDP :</label>
+            <input id="mdp" name="mdp" type="password"/>
+            <br />
+            <label for="mdpb">MDP Bis :</label>
+            <input id="mdpb" name="mdpb" type="password"/>
+            <br>
+            <label for="genre">Genre :</label>
+            M<input id="genre1" name="genre" type="radio" value="M"/>
+            F<input id="genre2" name="genre" type="radio" value="F"/>
+            <br />
+            <label for="date">Date de naissance:</label>
+            <input id="date" name="date" type="date"/>
+            <br />
+            <label for="adresse">Adresse:</label>
+            <textarea id="adresse" name="adresse"></textarea>
+            <br />
+             <label for="pays">Pays :</label>
+             <select id="pays" name="pays" >
+                 <option id="pays1" name="pays" value="fr">France</option>
+                 <option id="pays2" name="pays" value="jp">Japon</option>
+                 <option id="pays3" name="pays" value="us">Etas Unis</option>
+             </select>
+            <br />
+            <label for="news">Newsletter:</label>
+            <input id="news" name="news" type="checkbox"/>
+            <br />
+            <input type="submit"/>
+            <input type="reset"/>
+        </form>
+    </body>
+</html>

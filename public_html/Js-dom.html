@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="titre">Exercice sur le DOM</h1>
+        <form>
+            <label>Pseudo </label>
+            <input id="pseudo" name="name">
+            <br>
+            <label>M-d-P</label>
+            <input type="password" id="mdp" name="mdp">
+            <br>
+            <input type="button" value="Connexion" onclick="fonction()"/>
+        </form>
+        
+        <script>
+            function fonction(){
+                var pseudo = document.getElementById("pseudo").value;
+                var mdp = document.getElementById("mdp").value;
+                if(pseudo.length<3 || mdp.length<3){
+                    alert("BIP");
+                    return;
+                }
+                var res = "<h1>Bienvenue "+pseudo+"</h1>";
+//              var form = document.getElementsByTagName("form");
+//              form[0].innerHTML = res;
+                document.getElementsByTagName("form")[0].innerHTML = res;
+                
+            }
+        </script>
+    </body>
+</html>
